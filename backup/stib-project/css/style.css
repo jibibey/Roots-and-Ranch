@@ -1,0 +1,120 @@
+/* ------------------------- */
+/* ✅ CSS RESET (minimal normalize) */
+/* ------------------------- */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  line-height: 1.5;
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #fff;
+  color: var(--text-dark);
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+  color: inherit;
+  border: none;
+  outline: none;
+  background: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+/* ------------------------- */
+/* ✅ ROOT VARIABLES */
+/* ------------------------- */
+:root {
+  --primary: #635639;
+  --primary-dark: #8e7338;
+  --secondary: #8BC34A;
+  --accent: #07cdff;
+  --text-dark: #425c69;
+  --text-light: #ECEFF1;
+}
+
+/* ------------------------- */
+/* ✅ BASE STYLES */
+/* ------------------------- */
+.hero-gradient {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--text-light);
+}
+
+.card-hover {
+  transition: all 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.farm-icon {
+  background-color: var(--primary);
+  color: white;
+  border-radius: 50%;
+  padding: 15px;
+  font-size: 24px;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid var(--primary);
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.active-tab {
+  border-bottom: 3px solid var(--primary);
+  font-weight: bold;
+}
+
+.product-image-container {
+  aspect-ratio: 1/1;
+  overflow: hidden;
+}
+.product-image {
+  transition: transform 0.5s ease;
+}
+.product-image:hover {
+  transform: scale(1.1);
+}
