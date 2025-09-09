@@ -37,6 +37,19 @@
                 <?php endif; ?>
             </nav>
 
+ <a href="cart.php" class="block py-2 hover:text-blue-600 items-center">
+    
+                <!-- Small cart icon for mobile -->
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
+                        class="w-6 h-6">
+                        <!-- Cart Body -->
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 6h15l-2 8H6L3 6z" />
+                        <!-- Wheels (circles) -->
+                        <circle cx="7.5" cy="18" r="1.5" fill="currentColor" />
+                        <circle cx="15.5" cy="18" r="1.5" fill="currentColor" />
+                    </svg>
+            </a>
+
             <!-- Mobile Hamburger Button -->
             <button id="menu-toggle" class="md:hidden text-gray-700 focus:outline-none">
                 <svg id="menu-icon" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,15 +64,7 @@
             <a href="index.php" class="block py-2 hover:text-blue-600">Home</a>
             <a href="about.php" class="block py-2 hover:text-blue-600">About</a>
             <a href="contact.php" class="block py-2 hover:text-blue-600">Contact</a>
-            <a href="cart.php" class="block py-2 hover:text-blue-600 items-center">
-                <!-- Small cart icon for mobile -->
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor"
-                    class="w-5 h-5 mr-2">
-                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2 9m13-9l2 9m-5-9v9m-4-9v9" />
-                </svg>
-                Cart
-            </a>
+           
 
             <?php if (isset($_SESSION['user'])): ?>
                 <a href="logout.php" class="block bg-red-500 text-white px-3 py-2 rounded hover:bg-red-600">

@@ -7,7 +7,7 @@ include '../includes/header.php';
   <h1 class="text-3xl font-bold text-blue-600 mb-6">About Us</h1>
   
   <p class="text-gray-700 mb-4">
-    Welcome to <span class="font-semibold">MyWebsite</span>!  
+    Welcome to <span class="font-semibold">My Website</span>!  
     We are dedicated to providing high-quality products and services 
     tailored to your needs. Our goal is to create an excellent 
     shopping experience that you can trust.
